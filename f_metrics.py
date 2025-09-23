@@ -9,7 +9,7 @@ with open("metrics.md" , 'r' , encoding="utf-8") as f:
 tables = metrics.split("№")
 
 
-name = str(input())
+name = str(input('!Важно! : если вы напишете только имя , программа выдаст метрики всех людей ,\n чьи имена совпадают '))
 
 i = 0
 
