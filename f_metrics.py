@@ -8,14 +8,17 @@ with open("metrics.md" , 'r' , encoding="utf-8") as f:
 
 tables = metrics.split("№")
 
-while True :
 
-    name = str(input())
+name = str(input())
 
-    i = 0
+i = 0
 
 
-    for table in tables:
-        if name in table:
-            print("№"+table)
-            break
+for table in tables:
+    if name in table:
+        print("№"+table)
+    else :
+        i+=1
+
+if i != 0 :
+    print ('информация не найдена')
