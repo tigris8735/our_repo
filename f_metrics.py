@@ -6,14 +6,16 @@ import os
 with open("metrics.md" , 'r' , encoding="utf-8") as f: 
     metrics = f.read()
 
+tables = metrics.split("№")
 
-# инпут имя + фамилия
-name = str(input())
+while True :
+
+    name = str(input())
+
+    i = 0
 
 
-# функция проверки (поиск по инпуту)
-print (metrics)  
-
-# аутпут 
-# зациклить 
-
+    for table in tables:
+        if name in table:
+            print("№"+table)
+            break
