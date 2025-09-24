@@ -12,7 +12,6 @@ with open("metrics.md" , 'r' , encoding="utf-8") as f:
 '''
 
 
-
 tables = metrics.split("№")
 # разбиваем таблицы , сохраненные в переменную , в список (разделение идет по символу №)
 
